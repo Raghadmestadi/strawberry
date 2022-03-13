@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+   
+}
+
+@media (min-width: 768px){
+  
+.img-s{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+}
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="shortcut icon" href="/images/st.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/styles.css">
+
+    <title>Strawberry tailwindcss</title>
+</head>
+
+<body class="bg-pink-100 min-h-screen m-0 relative">
+
+    <header>
+        <section class=" bg-white w-full flex justify-between  item-center px-8   py-3 border-b-2  md:pl-20 ">
+
+            <nav>
+                <ul class="md:flex space-x-5">
+                    <li><a href="#" class=" hidden md:block border-b-2 hover:border-red-500 border-transparent "
+                            id="menu">About </a>
+                    </li>
+                    <li><a href="#" class="hidden md:block border-b-2 hover:border-red-500 border-transparent"
+                            id="menu">Shop </a>
+                    </li>
+                    <li><a href="#" class="hidden md:block border-b-2 hover:border-red-500 border-transparent"
+                            id="menu">contact </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="text-red-600 font-sans font-bold text-lg ">Strawberry
+            </div>
+            <div class="cursor-pointer md:hidden" id="m-icon">
+                <i class="fas fa-bars "></i>
+
+            </div>
+
+            <div class="hidden md:flex">
+                <div class="border border-gray-400 rounded-full px-2">
+                    <input type="text" name="search-bar" id="s-bar" class=" border-0 outline-none ">
+                    <i class="fas fa-search text-gray-600 text-sm"></i>
+                </div>
+                <div>
+                    <i class="far fa-heart text-gray-600 px-4 pt-1"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <ul class="block py-6 px-4  space-y-3 text-center bg-white md:hidden " id="nav">
+            <li><a href="#" class="  border-b-2 hover:border-red-500 border-transparent ">About
+                </a>
+            </li>
+            <li><a href="#" class="  border-b-2 hover:border-red-500 border-transparent">Shop
+                </a>
+            </li>
+            <li><a href="#" class=" border-b-2 hover:border-red-500 border-transparent">contact
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="  md:flex  ">
+        <div
+            class=" md:flex-1 md:h-screen uppercase text-center sm:text-left py-16 px-8 text-red-600 space-y-4  justify-center md:pt-40 md:px-16 ">
+            <h1 class=" text-3xl md:text-5xl font-bold">STRAWBERRIES
+            </h1>
+            <h2 class=" text-2xl md:text-3xl">fresh and organic</h2>
+            <p class="md:text-lg text-gray-600">10% OFF YOUR FIRST ORDER Use the code Strawberry at checkout!</p>
+            <button class="bg-red-600 mt-2  p-2 hover:bg-red-700 text-lg  md:text-2xl text-white ">
+                Buy now <span class="text-lg hidden md:inline ">&rarr;</span>
+            </button>
+
+        </div>
+        <div class=" lg:h-screen w-full">
+            <img class="img-s w-full h-full" src="/images/strawberry.jpg">
+        </div>
+    </main>
+    <footer
+        class="  block w-full flex text-red-500 justify-center  py-4  text-base  bg-white absolute bottom-0 w-full ">
+        <p>Fllow us: </p>
+
+        <i class="fab fa-facebook px-3 text-lg cursor-pointer "></i>
+        <i class="fab fa-instagram px-3 text-lg cursor-pointer"></i>
+        <i class="fab fa-twitter px-3 text-lg cursor-pointer"></i>
+
+    </footer>
+
+    <script>
+        const menu = document.querySelector("#m-icon")
+        const nav = document.querySelector("#nav")
+        menu.addEventListener('click', function () {
+            nav.classList.toggle("hidden")
+
+        })
+    </script>
+</body>
+
+</html>
